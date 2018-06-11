@@ -57,7 +57,7 @@ public class JaspicIPAuthenticatorLogin implements ServerAuthModule {
     public AuthStatus validateRequest(MessageInfo messageInfo, Subject clientSubject, Subject serviceSubject) throws AuthException {
         SecurityContext securityContext = (SecurityContext) messageInfo.getMap().get(JASPICAuthenticationMechanism.SECURITY_CONTEXT_ATTACHMENT_KEY);
         log.info(securityContext.getMechanismName());
-        Account account = securityContext.getIdentityManager().verify("jboss",new PasswordCredential("RedHat1!".toCharArray()));
+        Account account = securityContext.getIdentityManager().verify("admin",new PasswordCredential("secret".toCharArray()));
         log.info("Account: "+account);
         log.info("Authentication Status: "+securityContext.isAuthenticated());
         if (account != null) {
