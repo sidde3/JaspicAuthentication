@@ -3,11 +3,11 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.sid.redhat</groupId>
-    <artifactId>JaspiTest</artifactId>
+    <artifactId>JaspicAuthenticator</artifactId>
     <version>1.0</version>
     <packaging>war</packaging>
 
-    <name>JaspiTest</name>
+    <name>JaspicAuthenticator</name>
 
     <properties>
         <endorsed.dir>${project.build.directory}/endorsed</endorsed.dir>
@@ -56,7 +56,7 @@
     </dependencies>
 
     <build>
-        <finalName>JaspiTest</finalName>
+        <finalName>JaspicAuthenticator</finalName>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
